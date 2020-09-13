@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toogle">
+        <input type="checkbox" id="demo" onchange="toggleDoc()">
+        <label for="demo"></label>
+    </div>
+    <header>
+        <div class="crew">
+            <h1>The creative crew</h1>
+        </div>
+        <div class="description">
+            <h3>WHO WE ARE</h3>
+            <p>We are team of creatively diverse., driven, innovative individuals working in various locations from the world.</p>
+        </div>
+    </header>
+    <section>
+        <div class="crew">
+            <div class="image-container">
+                <img src="./images/photo1.png" alt="Product Owner">
+                <span>PRODUCT OWNER</span>
+            </div>
+            <p>Bill Mahoney</p>
+        </div>
+        <div class="crew">
+            <div class="image-container">
+                <img src="./images/photo2.png" alt="Art Designer">
+                <span>ART DESIGNER</span>
+            </div>
+            <p>Saba Cabrera</p>
+        </div>
+        <div class="crew">
+            <div class="image-container">
+                <img src="./images/photo3.png" alt="Tech Lead">
+                <span>TECH LEAD</span>
+            </div>
+            <p>Shae Le</p>
+        </div>
+        <div class="crew">
+            <div class="image-container">
+                <img src="./images/photo4.png" alt="UX Designer">
+                <span>UX DESIGNER</span>
+            </div>
+            <p>Skylah Lu</p>
+        </div>
+        <div class="crew">
+            <div class="image-container">
+                <img src="./images/photo5.png" alt="Developer">
+                <span>DEVELOPER</span>
+            </div>
+            <p>Griff Richards</p>
+        </div>
+        <div class="crew">
+            <div class="image-container">
+                <img src="./images/photo6.png" alt="Developer">
+                <span>DEVELOPER</span>
+            </div>
+            <p>Stan John</p>
+        </div>
+    </section>
+    <script>
+        function toggleDoc () {
+            var elements = document.querySelectorAll("body, body p, body h1, body h3")
+            var i;
+            for (i=0; i < elements.length; i++)
+            elements[i].classList.toggle("section-dark")
+        }
+    </script>
+</body>
+</html>
